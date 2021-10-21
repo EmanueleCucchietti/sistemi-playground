@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/e.cucchietti.1732/CLionProjects/nodi1/main.c" "C:/Users/e.cucchietti.1732/CLionProjects/nodi1/cmake-build-debug/CMakeFiles/nodi1.dir/main.c.obj"
+  "C:/Users/e.cucchietti.1732/Desktop/sist/sistemi-playground/Nodi - Liste/nodi1/main.c" "C:/Users/e.cucchietti.1732/Desktop/sist/sistemi-playground/Nodi - Liste/nodi1/cmake-build-debug/CMakeFiles/nodi1.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "MSVC")
 

@@ -12,8 +12,9 @@ Studente* addOnHead(Studente *testa, int *prog); //Aggiungo nuovo nodo in testa 
 Studente* addOnTail(Studente *head, int *prog);
 Studente* nuovoStudente(int *prog);
 int contaNodi(Studente *testa);
-Studente* addByPos(Studente *testa, int *prog,int posizione);
 void showList(Studente *head);
+Studente* addByPos(Studente *testa, int *prog,int posizione);
+Studente* delByPos(Studente *testa, int *prog,int posizione);
 
 
 int main()
@@ -154,9 +155,12 @@ Studente* addByPos(Studente *head, int *prog,int posizione)
     else
     {
         pLista = head;
+
         int i=0;
-        while (pLista->next != NULL && i<posizione-1)
+        while (pLista->next != NULL && i<posizione-1){
             pLista = pLista->next;
+            i++;
+        }
         forwardedNext = pLista -> next;
         pLista -> next = pStu;
         pStu -> next = forwardedNext;
@@ -164,3 +168,31 @@ Studente* addByPos(Studente *head, int *prog,int posizione)
     return head;
 
 }
+/*
+Studente* delByPos(Studente *head, int *prog,int posizione)
+{
+    Studente *pLista;
+    Studente *pStu;
+    Studente *forwardedNext;
+    pStu = nuovoStudente(prog);
+
+    if(head == NULL){
+        pStu ->next = head;
+        return pStu;
+    }
+    else
+    {
+        pLista = head;
+
+        int i=0;
+        while (pLista->next != NULL && i<posizione-1){
+            pLista = pLista->next;
+            i++;
+        }
+        forwardedNext = pLista -> next;
+        pLista -> next = pStu;
+        pStu -> next = forwardedNext;
+    }
+    return head;
+
+}*/

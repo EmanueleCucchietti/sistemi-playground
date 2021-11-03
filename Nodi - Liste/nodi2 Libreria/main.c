@@ -14,8 +14,10 @@ int main()
         printf("2. Aggiungi Nodo in Coda\n");
         printf("3. Stampa lista\n");
         printf("4. Conta Nodi lista\n");
-        printf("5. Aggiungi nodo alla posizione inserita\n");+
-        printf("6. Carica lista da File: ");
+        printf("5. Aggiungi nodo alla posizione inserita\n");
+        printf("6. Carica lista da File: \n");
+        printf("7. Elimina nodo alla posizione inserita\n");
+        printf("8. Ordina Lista per cognome\n");
         printf("0. Esci\n");
         printf("Scelta: ");
         scanf("%d",&scelta);
@@ -41,6 +43,14 @@ int main()
                 printf("Inserire nome file: ");
                 scanf("%s",file_name);
                 testa = loadFromFile(testa,&progStu,file_name);
+                break;
+            case 7:
+                printf("Inserire la posizione in cui rimuovere il nodo: ");
+                scanf("%d",&pos);
+                testa = delByPos(testa,pos);
+                break;
+            case 8:
+                sortList(testa);
                 break;
 
         }

@@ -20,8 +20,9 @@ Studente* nuovoStudenteDaFile(int *prog,char *cogn, float media);
 int contaNodi(Studente *testa);
 void showList(Studente *head);
 Studente* addByPos(Studente *testa, int *prog,int posizione);
-Studente* delByPos(Studente *testa, int *prog,int posizione);
+Studente* delByPos(Studente *testa, int posizione);
 Studente* loadFromFile(Studente *head, int *prog, char* file_name);
+Studente* sortList(Studente *head);
 
 void showList(Studente *head){
     Studente *pLista;
@@ -152,34 +153,31 @@ Studente* addByPos(Studente *head, int *prog,int posizione)
     return head;
 
 }
-/*
-Studente* delByPos(Studente *head, int *prog,int posizione)
-{
-    Studente *pLista;
-    Studente *pStu;
-    Studente *forwardedNext;
-    pStu = nuovoStudente(prog);
 
-    if(head == NULL){
-        pStu ->next = head;
-        return pStu;
-    }
+Studente* delByPos(Studente *head,int posizione)
+{
+    int i = 1;
+    Studente *pLista;
+
+    if(posizione == 1 || contaNodi(head) == 1)
+        head = head->next;
     else
     {
         pLista = head;
 
-        int i=0;
-        while (pLista->next != NULL && i<posizione-1){
-            pLista = pLista->next;
-            i++;
+        if(contaNodi(head) > posizione)
+        {
+            while(i < posizione - 1)
+            {
+                i++;
+                pLista = pLista->next;
+            }
+            pLista->next = pLista->next->next;
         }
-        forwardedNext = pLista -> next;
-        pLista -> next = pStu;
-        pStu -> next = forwardedNext;
     }
-    return head;
 
-}*/
+    return head;
+}
 Studente* loadFromFile(Studente *head, int *prog, char* file_name){
 
     FILE *fp;
@@ -227,5 +225,41 @@ Studente* loadFromFile(Studente *head, int *prog, char* file_name){
         fclose(fp);
     }
 
+}
+Studente* sortList(Studente *head){
+    Studente *pLista;
+    Studente *pAus;
+    char aus[20+1];
+    int prog;
+    float media;
+
+    pLista = head;
+
+    if(head != NULL)
+    {
+        while(pLista!= NULL)
+        {
+            pAus = pLista->next;
+            while(pAus != NULL)
+            {
+                if(strcmp(pLista->cognome, pAus->cognome) > 0)
+                {
+                    strcpy(aus, pLista->cognome);
+                    strcpy(pLista->cognome, pAus->cognome);
+                    strcpy(pAus->cognome, aus);
+
+                    prog = pLista->codice;
+                    pLista->codice = pAus->codice;
+                    pAus->codice = prog;
+
+                    media = pLista->media;
+                    pLista->media = pAus->media;
+                    pAus->media = media;
+                }
+                pAus = pAus->next;
+            }
+            pLista = pLista->next;
+        }
+    }
 }
 #endif //INC_01_NODO_LISTALIB_H

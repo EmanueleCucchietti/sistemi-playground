@@ -52,6 +52,8 @@ int main()
             case 8:
                 sortList(testa);
                 break;
+            case 9:
+                freeLista(&testa);
 
         }
     } while (scelta != 0);

@@ -23,6 +23,16 @@ Studente* addByPos(Studente *testa, int *prog,int posizione);
 Studente* delByPos(Studente *testa, int posizione);
 Studente* loadFromFile(Studente *head, int *prog, char* file_name);
 Studente* sortList(Studente *head);
+void freeLista(Studente **head){
+    Studente *pLista;
+
+    while (*head != NULL)
+    {
+        pLista = (*head)->next;
+        free(*head);
+        *head = pLista;
+    }
+}
 
 void showList(Studente *head){
     Studente *pLista;
@@ -262,4 +272,5 @@ Studente* sortList(Studente *head){
         }
     }
 }
+
 #endif //INC_01_NODO_LISTALIB_H

@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/e.cucchietti.1732/Desktop/sis/sistemi-playground/Nodi - Liste/nodi3 Giocatori - Squadre/main.c
+stdio.h
+-
+

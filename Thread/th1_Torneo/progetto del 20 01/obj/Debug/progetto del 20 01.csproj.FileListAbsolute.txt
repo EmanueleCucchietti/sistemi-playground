@@ -1,0 +1,11 @@
+C:\Users\emanu\Desktop\sistemi-playground\Thread\th1_Torneo\progetto del 20 01\bin\Debug\progetto del 20 01.exe.config
+C:\Users\emanu\Desktop\sistemi-playground\Thread\th1_Torneo\progetto del 20 01\bin\Debug\progetto del 20 01.exe
+C:\Users\emanu\Desktop\sistemi-playground\Thread\th1_Torneo\progetto del 20 01\bin\Debug\progetto del 20 01.pdb
+C:\Users\emanu\Desktop\sistemi-playground\Thread\th1_Torneo\progetto del 20 01\obj\Debug\progetto del 20 01.csproj.AssemblyReference.cache
+C:\Users\emanu\Desktop\sistemi-playground\Thread\th1_Torneo\progetto del 20 01\obj\Debug\progetto del 20 01.csproj.SuggestedBindingRedirects.cache
+C:\Users\emanu\Desktop\sistemi-playground\Thread\th1_Torneo\progetto del 20 01\obj\Debug\progetto_del_20_01.Form1.resources
+C:\Users\emanu\Desktop\sistemi-playground\Thread\th1_Torneo\progetto del 20 01\obj\Debug\progetto_del_20_01.Properties.Resources.resources
+C:\Users\emanu\Desktop\sistemi-playground\Thread\th1_Torneo\progetto del 20 01\obj\Debug\progetto del 20 01.csproj.GenerateResource.cache
+C:\Users\emanu\Desktop\sistemi-playground\Thread\th1_Torneo\progetto del 20 01\obj\Debug\progetto del 20 01.csproj.CoreCompileInputs.cache
+C:\Users\emanu\Desktop\sistemi-playground\Thread\th1_Torneo\progetto del 20 01\obj\Debug\progetto del 20 01.exe
+C:\Users\emanu\Desktop\sistemi-playground\Thread\th1_Torneo\progetto del 20 01\obj\Debug\progetto del 20 01.pdb

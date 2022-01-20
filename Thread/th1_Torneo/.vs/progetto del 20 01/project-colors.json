@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f77460c4-531a-4be2-97b3-48c155f2452e": {
+      "ProjectGuid": "f77460c4-531a-4be2-97b3-48c155f2452e",
+      "DisplayName": "progetto del 20 01",
+      "ColorIndex": 0
+    },
+    "19bc5345-9fb6-470a-8f7e-f18aa87e2fcc": {
+      "ProjectGuid": "19bc5345-9fb6-470a-8f7e-f18aa87e2fcc",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

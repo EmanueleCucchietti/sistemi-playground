@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F77460C4-531A-4BE2-97B3-48C155F2452E}</ProjectGuid>
+    <ProjectGuid>{C3592F04-3DD4-419D-B519-317D257EE84D}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>progetto_del_20_01</RootNamespace>
-    <AssemblyName>progetto del 20 01</AssemblyName>
+    <RootNamespace>Torneo</RootNamespace>
+    <AssemblyName>Torneo</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

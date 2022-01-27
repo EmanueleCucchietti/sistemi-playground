@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace progetto_del_20_01
+namespace Torneo
 {
-    static class Program
+    internal static class Program
     {
         /// <summary>
         /// Punto di ingresso principale dell'applicazione.

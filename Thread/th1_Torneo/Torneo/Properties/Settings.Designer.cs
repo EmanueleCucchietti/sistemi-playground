@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace progetto_del_20_01.Properties
+namespace Torneo.Properties
 {
 
 

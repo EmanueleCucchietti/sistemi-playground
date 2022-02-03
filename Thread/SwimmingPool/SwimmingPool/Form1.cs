@@ -16,12 +16,12 @@ namespace SwimmingPool
 
         private void readPlayers()
         {
-            lblBeforePlayers.Text = "";
+            lblAtleti.Text = "";
             StreamReader sr = new StreamReader("../../../txt/Players.txt");
             while (!sr.EndOfStream)
             {
                 string line = sr.ReadLine();
-                lblBeforePlayers.Text += "\n"+line;
+                lblAtleti.Text += "\n"+line;
             }
         }
     }

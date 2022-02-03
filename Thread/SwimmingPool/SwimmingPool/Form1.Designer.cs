@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtA1 = new System.Windows.Forms.TextBox();
+            this.txtA2 = new System.Windows.Forms.TextBox();
+            this.txtA4 = new System.Windows.Forms.TextBox();
+            this.txtA3 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblAtleti = new System.Windows.Forms.Label();
             this.lblTurno = new System.Windows.Forms.Label();
@@ -47,37 +47,37 @@
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtA1
             // 
-            this.textBox1.Location = new System.Drawing.Point(40, 15);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
-            this.textBox1.TabIndex = 0;
+            this.txtA1.Location = new System.Drawing.Point(40, 15);
+            this.txtA1.Name = "txtA1";
+            this.txtA1.ReadOnly = true;
+            this.txtA1.Size = new System.Drawing.Size(125, 27);
+            this.txtA1.TabIndex = 0;
             // 
-            // textBox2
+            // txtA2
             // 
-            this.textBox2.Location = new System.Drawing.Point(215, 15);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(125, 27);
-            this.textBox2.TabIndex = 1;
+            this.txtA2.Location = new System.Drawing.Point(215, 15);
+            this.txtA2.Name = "txtA2";
+            this.txtA2.ReadOnly = true;
+            this.txtA2.Size = new System.Drawing.Size(125, 27);
+            this.txtA2.TabIndex = 1;
             // 
-            // textBox3
+            // txtA4
             // 
-            this.textBox3.Location = new System.Drawing.Point(565, 15);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(125, 27);
-            this.textBox3.TabIndex = 3;
+            this.txtA4.Location = new System.Drawing.Point(565, 15);
+            this.txtA4.Name = "txtA4";
+            this.txtA4.ReadOnly = true;
+            this.txtA4.Size = new System.Drawing.Size(125, 27);
+            this.txtA4.TabIndex = 3;
             // 
-            // textBox4
+            // txtA3
             // 
-            this.textBox4.Location = new System.Drawing.Point(390, 15);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(125, 27);
-            this.textBox4.TabIndex = 2;
+            this.txtA3.Location = new System.Drawing.Point(390, 15);
+            this.txtA3.Name = "txtA3";
+            this.txtA3.ReadOnly = true;
+            this.txtA3.Size = new System.Drawing.Size(125, 27);
+            this.txtA3.TabIndex = 2;
             // 
             // pictureBox1
             // 
@@ -161,6 +161,7 @@
             this.btnAvvia.TabIndex = 10;
             this.btnAvvia.Text = "Avvia";
             this.btnAvvia.UseVisualStyleBackColor = true;
+            this.btnAvvia.Click += new System.EventHandler(this.btnAvvia_Click);
             // 
             // Form1
             // 
@@ -174,10 +175,10 @@
             this.Controls.Add(this.lblTurno);
             this.Controls.Add(this.lblAtleti);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtA4);
+            this.Controls.Add(this.txtA3);
+            this.Controls.Add(this.txtA2);
+            this.Controls.Add(this.txtA1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -193,10 +194,10 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
+        private TextBox txtA1;
+        private TextBox txtA2;
+        private TextBox txtA4;
+        private TextBox txtA3;
         private PictureBox pictureBox1;
         private Label lblAtleti;
         private Label lblTurno;

@@ -58,7 +58,7 @@ namespace SwimmingPool
             rnd = new Random();
             lblEsito.Text = "";
             lblEliminati.Text = "";
-            arbitro = new Thread(arbitroThread);
+            arbitro = new Thread(   arbitroThread);
             arbitro.Start();
         }
 
@@ -88,26 +88,36 @@ namespace SwimmingPool
             {
                 txtA = new TextBox();
                 txtA = (TextBox)Controls["txtA" + (i+1).ToString()];
-                do
+
+                posAtl = rnd.Next(0, atletiLetti);
+                while (playerList[posAtl].HasPlayed)
                 {
                     posAtl = rnd.Next(0, atletiLetti);
                 }
-                while (playerList[posAtl].HasPlayed);
                 playerList[posAtl].HasPlayed = true;
                 BeginInvoke((MethodInvoker)delegate ()
                 {
-                    txtA.Text = playerList[posAtl].ToString();
+                    txtA.Text = playerList[posAtl].Name.ToString();
 
                 });
                 Thread.Sleep(100);
+                atlBatterie[i] = new Thread(garaAtleta);
+                atlBatterie[i].Name = playerList[posAtl].Name;
                 atlBatterie[i].Start(txtA);
 
             }
+            setValore(lblStato, "PRONTI...");
             for(int i=0; i<BATTERIE;i++)
                 atlBatterie[i].Join();
             Thread.Sleep(3000);
         }
 
+
+        private void garaAtleta(object parametri)
+        {
+            TextBox txtAtl = (parametri as TextBox);
+            Thread.Sleep(1000);
+        }
         private void setValore(Label lbl, string output)
         {
             BeginInvoke((MethodInvoker)delegate ()
